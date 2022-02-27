@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{5A42CD4D-33F6-4A94-843E-D7614DFF9325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{5A42CD4D-33F6-4A94-843E-D7614DFF9325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationBonus", "AnimationBonus\AnimationBonus.csproj", "{6BF215D4-D522-43CF-B0EC-AE59E2634338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5A42CD4D-33F6-4A94-843E-D7614DFF9325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A42CD4D-33F6-4A94-843E-D7614DFF9325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A42CD4D-33F6-4A94-843E-D7614DFF9325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF215D4-D522-43CF-B0EC-AE59E2634338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF215D4-D522-43CF-B0EC-AE59E2634338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF215D4-D522-43CF-B0EC-AE59E2634338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF215D4-D522-43CF-B0EC-AE59E2634338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

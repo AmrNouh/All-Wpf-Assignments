@@ -52,7 +52,7 @@ namespace Calculator
                             }
                             else
                             {
-                                txtNumber.Text = "-";
+                                txtNumber.Text = "- ";
                             }
                         }
                         else
@@ -100,7 +100,6 @@ namespace Calculator
 
         private void Operand_Click(object sender, RoutedEventArgs e)
         {
-            flag = true;
             switch (((Button)sender).Content)
             {
                 case "0":

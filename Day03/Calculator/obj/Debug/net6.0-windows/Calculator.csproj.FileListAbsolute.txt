@@ -2,7 +2,6 @@ F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\bin\Debug\net6.0-windows\C
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\bin\Debug\net6.0-windows\Calculator.deps.json
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\bin\Debug\net6.0-windows\Calculator.runtimeconfig.json
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\bin\Debug\net6.0-windows\Calculator.dll
-F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\bin\Debug\net6.0-windows\ref\Calculator.dll
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\bin\Debug\net6.0-windows\Calculator.pdb
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\Calculator.csproj.AssemblyReference.cache
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\MainWindow.g.cs
@@ -19,3 +18,4 @@ F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\C
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\ref\Calculator.dll
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\Calculator.pdb
 F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\Calculator.genruntimeconfig.cache
+F:\ITI PD 9Month\WPF\All Assignments\Day03\Calculator\obj\Debug\net6.0-windows\refint\Calculator.dll
