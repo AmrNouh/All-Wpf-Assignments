@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "728bc69f-dfa8-4209-b76b-f35e15dc3d60": {
+      "ProjectGuid": "728bc69f-dfa8-4209-b76b-f35e15dc3d60",
+      "DisplayName": "FormUI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

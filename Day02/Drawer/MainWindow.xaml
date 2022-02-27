@@ -1,0 +1,70 @@
+﻿<Window x:Class="Drawer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Drawer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Margin="10" Padding="5" BorderThickness="5" BorderBrush="Red" CornerRadius="5" Background="Cyan">
+            <InkCanvas x:Name="ink"></InkCanvas> 
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <GroupBox Header="Colors" Width="90" Margin="10" Padding="5">
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Checked="ColorChecked" Content="Red"/>
+                    <RadioButton Checked="ColorChecked" Content="Green"/>
+                    <RadioButton Checked="ColorChecked" Content="Blue"/>
+                    <RadioButton Checked="ColorChecked" Content="Magenta"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Modes" Width="105" Margin="10" Padding="5">
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Checked="ModesChecked" Content="Ink"/>
+                    <RadioButton Checked="ModesChecked" Content="Select"/>
+                    <RadioButton Checked="ModesChecked" Content="EraseByPoint"/>
+                    <RadioButton Checked="ModesChecked" Content="EraseByStroke"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Drawing Shape" Width="105" Margin="10" Padding="5">
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Checked="ShapeChecked" Content="Ellipse"/>
+                    <RadioButton Checked="ShapeChecked" Content="Rectangle"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Brush Size" Width="90" Margin="10" Padding="5">
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Checked="SizeChange" Content="Small"/>
+                    <RadioButton Checked="SizeChange" Content="Normal"/>
+                    <RadioButton Checked="SizeChange" Content="Large"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Width="303" Margin="10" Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="btnNew" Margin="5" Click="ClearInk" Content="New" />
+                    <Button x:Name="btnSave" Margin="5" Click="SaveInkContent" Content="Save" Grid.Column="1"/>
+                    <Button x:Name="btnLoad" Margin="5" Click="LoadContentToInk" Content="Load" Grid.Column="2"/>
+                    <Button x:Name="btnCopy" Margin="5" Click="CopyInkContent" Content="Copy" Grid.Column="0" Grid.Row="1"/>
+                    <Button x:Name="btnCut" Margin="5" Click="CutInkContent" Content="Cut" Grid.Column="1" Grid.Row="1"/>
+                    <Button x:Name="btnPast" Margin="5" Click="PastContentToInk" Content="Past" Grid.Column="2" Grid.Row="1"/>
+
+                </Grid>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

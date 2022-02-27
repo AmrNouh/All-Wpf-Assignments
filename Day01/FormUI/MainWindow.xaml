@@ -1,0 +1,45 @@
+﻿<Window x:Name="frmDataEntry" x:Class="FormUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormUI"
+        mc:Ignorable="d"
+        Title="Form" Height="522" Width="447" WindowStartupLocation="CenterScreen" Closing="CloseWindow">
+    <Grid d:IsLocked="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="119"></ColumnDefinition>
+            <ColumnDefinition Width="398*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="FirstName" FontSize="16" FontWeight="Normal" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtFirstName" Grid.Column="1" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="LastName" FontSize="16" FontWeight="Normal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtLastName" Grid.Column="1" Grid.Row="1" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="Gender" FontSize="16" FontWeight="Normal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtGender" Grid.Column="1" Grid.Row="2" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="Address" FontSize="16" FontWeight="Normal" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtAddress" Grid.Column="1" Grid.Row="3" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="Phone" FontSize="16" FontWeight="Normal" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtPhone" Grid.Column="1" Grid.Row="4" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="Mobile" FontSize="16" FontWeight="Normal" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtMobile" Grid.Column="1" Grid.Row="5" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="Email" FontSize="16" FontWeight="Normal" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtEmail" Grid.Column="1" Grid.Row="6" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Label Content="Job Title" FontSize="16" FontWeight="Normal" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <TextBox x:Name="txtJobTitle" Grid.Column="1" Grid.Row="7" Cursor="IBeam" Width="300" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Button x:Name="btnSave" Click="SaveData" Content="Save" Grid.Column="1" Grid.Row="8" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="35,0,0,0" d:IsLocked="True"/>
+        <Button x:Name="btnCancel" Click="ClearData"  Content="Cancel" Grid.Column="1" Grid.Row="8" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="115,0,0,0" d:IsLocked="True"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="4" Margin="-103,53,0,0" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Width="1" d:IsLocked="True"/>
+    </Grid>
+</Window>

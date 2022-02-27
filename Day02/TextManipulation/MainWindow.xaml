@@ -1,0 +1,55 @@
+﻿<Window x:Class="TextManipulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextManipulation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtArea" Margin="10" TextWrapping="Wrap" Text="Default starting text." FontSize="14" Padding="5,5,5,5" Cursor="IBeam" MinWidth="775" SelectionTextBrush="White"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <GroupBox Header="Writable" Margin="10" Padding="5" Width="100" Height="88">
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Checked="WritableChanged" Content="Editable" IsChecked="True"/>
+                    <RadioButton Checked="WritableChanged" Content="Read Only"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Alignment" Margin="10" Padding="5" Width="100">
+                <StackPanel Orientation="Vertical">
+                    <RadioButton Checked="AlignmentChanged" Content="Left" IsChecked="True"/>
+                    <RadioButton Checked="AlignmentChanged" Content="Center"/>
+                    <RadioButton Checked="AlignmentChanged" Content="Right"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Text Manipulation" Margin="10" Padding="5" Width="539">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnSetText" Grid.Row="0" Grid.Column="0" Content="Set Text" Margin="5,5,5,5" Click="btnSetText_Click"/>
+                    <Button x:Name="btnSelectAll" Grid.Row="0" Grid.Column="1" Content="Select All" Margin="5,5,5,5" Click="btnSelectAll_Click"/>
+                    <Button x:Name="btnClear" Grid.Row="0" Grid.Column="2" Content="Clear" Margin="5,5,5,5" Click="btnClear_Click"/>
+                    <Button x:Name="btnPrepend" Grid.Row="1" Grid.Column="0" Content="Prepend" Margin="5,5,5,5" Click="btnPrepend_Click"/>
+                    <Button x:Name="btnInsert" Grid.Row="1" Grid.Column="1" Content="Insert" Margin="5,5,5,5" Click="btnInsert_Click"/>
+                    <Button x:Name="btnAppend" Grid.Row="1" Grid.Column="2" Content="Append" Margin="5,5,5,5" Click="btnAppend_Click"/>
+                    <Button x:Name="btnCut" Grid.Row="2" Grid.Column="0" Content="Cut" Margin="5,5,5,5" Click="btnCut_Click"/>
+                    <Button x:Name="btnPaste" Grid.Row="2" Grid.Column="1" Content="Paste" Margin="5,5,5,5" Click="btnPaste_Click"/>
+                    <Button x:Name="btnCopy" Grid.Row="2" Grid.Column="2" Content="Copy" Margin="5,5,5,5" Click="btnCopy_Click"/>
+                </Grid>
+            </GroupBox>
+        </StackPanel>
+
+    </Grid>
+</Window>
