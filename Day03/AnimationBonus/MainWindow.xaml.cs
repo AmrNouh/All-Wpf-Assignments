@@ -23,6 +23,7 @@ namespace AnimationBonus
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

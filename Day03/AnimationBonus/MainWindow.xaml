@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnimationBonus"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Window.Resources>
+        <EventTrigger x:Key="Rotate" RoutedEvent="Button.MouseEnter">
+            <BeginStoryboard >
+                <Storyboard>
+                    <DoubleAnimation 
+                                Storyboard.TargetName="rotate"
+                                Storyboard.TargetProperty="Angle"
+                                To="180" Duration="00:00:01"
+                                AutoReverse="True"></DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Resources>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Button MouseMove="Animate" Content="One" HorizontalAlignment="Center" Height="40" Width="40" Margin="0,10,0,10"></Button>
+            <Button MouseMove="Animate" Content="Two" HorizontalAlignment="Center" Height="40" Width="40" Margin="0,0,0,10"></Button>
+            <Button MouseMove="Animate" Content="Three" HorizontalAlignment="Center" Height="40" Width="40" Margin="0,0,0,10"></Button>
+            <Button MouseMove="Animate" Content="Four" HorizontalAlignment="Center" Height="40" Width="40" Margin="0,0,0,10"></Button>
+            <Button MouseMove="Animate" Content="Five" HorizontalAlignment="Center" Height="40" Width="40"></Button>
+        </StackPanel>
 
     </Grid>
 </Window>
